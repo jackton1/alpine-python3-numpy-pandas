@@ -36,6 +36,5 @@ RUN set -ex \
         git \
     && update-ca-certificates 2>/dev/null || true \
     && export PATH=$PATH:/usr/lib/chromium-browser \
-    && pip3.6 install -U pip setuptools \
     && pip3.6 install --no-cache-dir -r requirements.txt \
     && apk del .build-deps
